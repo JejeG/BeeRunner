@@ -8,11 +8,14 @@ public class Bee : MonoBehaviour {
 
     private Vector3 moveVector;
 
+    // Move speed
     [SerializeField]
-    private float speed = 5.0f;
+    private float speed = 12.0f;
 
+    // Pollen collected
     [SerializeField]
-    private int pollen = 0;
+    private int _pollen = 0;
+    public int pollen { get { return _pollen; } }
 
     // Use this for initialization
     void Start () {
@@ -34,7 +37,10 @@ public class Bee : MonoBehaviour {
     {
         if(other.tag == "Flower")
         {
-            pollen++;
+            _pollen++;
+        } else if(other.tag == "Obstacle")
+        {
+            _pollen--;
         }
     }
 }

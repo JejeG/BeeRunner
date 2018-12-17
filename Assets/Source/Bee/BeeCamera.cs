@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class BeeCamera : MonoBehaviour {
 
+    // Player transform to follow
     [SerializeField]
     private Transform lookAt;
 
+    // Offset from player transform at start
     [SerializeField]
     private Vector3 startOffset;
 

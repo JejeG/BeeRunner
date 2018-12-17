@@ -53,7 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilePrefabs:
   - {fileID: 1388812591197852, guid: ad31b67547ee77b4c93e540d2f99a400, type: 2}
-  - {fileID: 1388812591197852, guid: ad31b67547ee77b4c93e540d2f99a400, type: 2}
-  - {fileID: 1388812591197852, guid: ad31b67547ee77b4c93e540d2f99a400, type: 2}
+  - {fileID: 1144539187774680, guid: 6ff3af5ee1e97014683da6c031b047f7, type: 2}
   tileLength: 10
   totalTilesOnScreen: 7
+  lastTileIndex: -1
