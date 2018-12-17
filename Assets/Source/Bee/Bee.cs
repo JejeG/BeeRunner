@@ -11,8 +11,11 @@ public class Bee : MonoBehaviour {
     [SerializeField]
     private float speed = 5.0f;
 
-	// Use this for initialization
-	void Start () {
+    [SerializeField]
+    private int pollen = 0;
+
+    // Use this for initialization
+    void Start () {
         controller = GetComponent<CharacterController>();
 	}
 	
@@ -26,4 +29,12 @@ public class Bee : MonoBehaviour {
 
         controller.Move(moveVector * Time.deltaTime);	
 	}
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Flower")
+        {
+            pollen++;
+        }
+    }
 }
