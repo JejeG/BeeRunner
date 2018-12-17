@@ -18,6 +18,12 @@ public class Bee : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        controller.Move(Vector3.forward * Time.deltaTime * speed);	
+        moveVector = Vector3.zero;
+
+        moveVector.x = Input.GetAxis("Horizontal") * speed;
+        moveVector.y = Input.GetAxis("Vertical") * speed;
+        moveVector.z = speed;
+
+        controller.Move(moveVector * Time.deltaTime);	
 	}
 }
