@@ -629,6 +629,11 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 914646850}
+    - target: {fileID: 114663132634462146, guid: 2027364ad9067ad4584965aa73499c90,
+        type: 2}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2027364ad9067ad4584965aa73499c90, type: 2}
   m_IsPrefabParent: 0
