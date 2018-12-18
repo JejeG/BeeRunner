@@ -6,18 +6,43 @@ ModelImporter:
     100000: Stone_A
     100002: Stone_B
     100004: //RootNode
+    100006: Stump_A
+    100008: Stump_B
     400000: Stone_A
     400002: Stone_B
     400004: //RootNode
+    400006: Stump_A
+    400008: Stump_B
     2100000: Stone_A
     2300000: Stone_A
     2300002: Stone_B
+    2300004: Stump_A
+    2300006: Stump_B
     3300000: Stone_A
     3300002: Stone_B
+    3300004: Stump_A
+    3300006: Stump_B
     4300000: Stone_A
     4300002: Stone_B
+    4300004: Stump_A
+    4300006: Stump_B
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stone_A
+    second: {fileID: 2100000, guid: 196c3f5682189ed4593138dbf76e472a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stump_A
+    second: {fileID: 2100000, guid: 3f1b588d5d893154ab43c68a1ab568a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stump_B
+    second: {fileID: 2100000, guid: a5046756a7fef7b43b6a421af92059d6, type: 2}
   materials:
     importMaterials: 1
     materialName: 1
@@ -55,7 +80,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
