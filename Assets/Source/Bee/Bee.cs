@@ -12,7 +12,11 @@ public class Bee : MonoBehaviour {
 
     // Move speed
     [SerializeField]
-    private float speed = 12.0f;
+    private float speed = 0f;
+
+    private float maxSpeed = 24.0f;
+    private float acceleration = 2.0f;
+
 
     // Pollen collected
     [SerializeField]
@@ -39,10 +43,36 @@ public class Bee : MonoBehaviour {
             return;
         }
 
+        if (speed < maxSpeed)
+        {
+            speed += acceleration * Time.deltaTime;
+            if(speed > maxSpeed)
+            {
+                speed = maxSpeed;
+            }
+        }
+
         moveVector = Vector3.zero;
 
-        moveVector.x = Input.GetAxis("Horizontal") * speed;
-        moveVector.y = Input.GetAxis("Vertical") * speed;
+        if ((transform.position.x <= -10 && Input.GetAxis("Horizontal") < 0) || (transform.position.x >= 10 && Input.GetAxis("Horizontal") > 0))
+        {
+            moveVector.x = 0;
+        }
+        else
+        {
+            moveVector.x = Input.GetAxis("Horizontal") * speed;
+        }
+
+        if ((transform.position.y <= -10 && Input.GetAxis("Vertical") < 0) || (transform.position.y >= 10 && Input.GetAxis("Vertical") > 0))
+        {
+            moveVector.y = 0;
+        }
+        else
+        {
+            moveVector.y = Input.GetAxis("Vertical") * speed;
+        }
+
+       
         moveVector.z = speed;
 
         controller.Move(moveVector * Time.deltaTime);
@@ -56,6 +86,8 @@ public class Bee : MonoBehaviour {
         } else if(other.tag == "Obstacle")
         {
             _pollen--;
+
+            speed = speed / 2;
 
             if(_pollen < 0)
             {

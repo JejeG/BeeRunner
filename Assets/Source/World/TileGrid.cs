@@ -7,7 +7,7 @@ public class TileGrid : MonoBehaviour {
     [SerializeField]
     private float size = 1f;
 
-    public float height = 50f;
+    public float height = 3f;
 
     public Vector3 GetNearestPointOnGrid(Vector3 position)
     {
