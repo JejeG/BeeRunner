@@ -6,6 +6,9 @@ public class TilesManager : MonoBehaviour {
 
     // Array of available tiles prefabs
     public GameObject[] tilePrefabs;
+    public GameObject[] tileProps;
+
+    public int maxProps = 3;
 
     // Player transform
     private Transform playerTransform;
@@ -56,18 +59,50 @@ public class TilesManager : MonoBehaviour {
     {
 
         int randomIndex = Random.Range(0, tilePrefabs.Length);
-        Debug.Log(randomIndex);
         lastTileIndex = randomIndex;
 
         // /!\ TODO : Avoid to spawn the same tile as previous tile /!\
 
-        GameObject go;
+        GameObject ground;
 
-        go = Instantiate(tilePrefabs[randomIndex]) as GameObject;
-        go.transform.SetParent(transform);
-        go.transform.position = Vector3.forward * spawnZ;
+        ground = Instantiate(tilePrefabs[randomIndex]) as GameObject;
+        ground.transform.SetParent(transform);
+        ground.transform.position = Vector3.forward * spawnZ;
+
+        for(int i = 0; i < maxProps; i++)
+        {
+
+            Vector3 meshSize = ground.GetComponent<MeshRenderer>().bounds.size;
+
+            TileGrid grid = ground.GetComponent<TileGrid>();
+
+            Vector3 randomPosition = new Vector3(Random.Range(meshSize.x / 2 * -1, meshSize.x / 2), grid.height, Random.Range(spawnZ - meshSize.z / 2, spawnZ + meshSize.z / 2));
+
+            RaycastHit hitInfo;
+            Ray ray = new Ray();
+            ray.origin = randomPosition;
+            ray.direction = ground.transform.up * -1;
+
+            if (Physics.Raycast(ray, out hitInfo))
+            {
+                if (hitInfo.transform.tag == "Ground") {
+                    GameObject randomProp;
+                    int randomPropsIndex = Random.Range(0, tileProps.Length);
+
+                    randomProp = Instantiate(tileProps[randomPropsIndex]) as GameObject;
+
+                    randomProp.transform.SetParent(ground.transform);
+
+                   Vector3 calculatedPosition = new Vector3(randomPosition.x, ground.transform.position.y + randomProp.GetComponent<MeshRenderer>().bounds.size.y / 2, randomPosition.z);
+
+                    var finalPosition = grid.GetNearestPointOnGrid(calculatedPosition);
+                    randomProp.transform.position = finalPosition;
+                }
+            }
+        }
+
         spawnZ += tileLength;
-        activeTiles.Add(go);
+        activeTiles.Add(ground);
     }
 
     // Destroy the oldest tile
