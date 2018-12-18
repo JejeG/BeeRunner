@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Bee : MonoBehaviour {
@@ -32,14 +31,14 @@ public class Bee : MonoBehaviour {
     // Use this for initialization
     void Start () {
         controller = GetComponent<CharacterController>();
-        scoreText.text = "0";
+        scoreText.text = "0 / " + GameManager.Instance.getScoreToReach().ToString();
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (isDead == true)
         {
-            Restart();
+            GameManager.Instance.RestartGame();
             return;
         }
 
@@ -63,7 +62,7 @@ public class Bee : MonoBehaviour {
             moveVector.x = Input.GetAxis("Horizontal") * speed;
         }
 
-        if ((transform.position.y <= -10 && Input.GetAxis("Vertical") < 0) || (transform.position.y >= 10 && Input.GetAxis("Vertical") > 0))
+        if ((transform.position.y <= 0 && Input.GetAxis("Vertical") < 0) || (transform.position.y >= 10 && Input.GetAxis("Vertical") > 0))
         {
             moveVector.y = 0;
         }
@@ -83,6 +82,13 @@ public class Bee : MonoBehaviour {
         if(other.tag == "Flower")
         {
             _pollen++;
+
+            if(_pollen >= GameManager.Instance.getScoreToReach())
+            {
+                Debug.Log("YOU WIN ! NEXT LEVEL !");
+                GameManager.instance.IncreaseLevel();
+            }
+
         } else if(other.tag == "Obstacle")
         {
             _pollen--;
@@ -96,18 +102,12 @@ public class Bee : MonoBehaviour {
             }
         }
 
-        scoreText.text = (_pollen).ToString();
+        scoreText.text = (_pollen).ToString()+" / " + GameManager.Instance.getScoreToReach().ToString();;
     }
 
     public void Died()
     {
         Debug.Log("DIED !");
         _isDead = true;
-    }
-
-    // /!\ TODO : MOVE IT SOMEWHERE ELSE + CLEAN IMPORT ABOVE /!\
-    public void Restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
