@@ -8,7 +8,7 @@ public class TilesManager : MonoBehaviour {
     public GameObject[] tilePrefabs;
     public GameObject[] tileProps;
 
-    public int maxProps = 3;
+    public int maxProps = 20;
 
     // Player transform
     private Transform playerTransform;
@@ -25,7 +25,7 @@ public class TilesManager : MonoBehaviour {
 
     // Max tiles to display/keep alive
     [SerializeField]
-    private int totalTilesOnScreen = 7;
+    private int totalTilesOnScreen = 3;
 
     [SerializeField]
     private int lastTileIndex = -1;
