@@ -9,12 +9,20 @@ ModelImporter:
     100006: Flower_Stalk_A
     100008: Flower_Stalk_B
     100010: //RootNode
+    100012: Flower_B
+    100014: Flower_Low_Leaf_A
+    100016: Flower_Stalk_C
+    100018: Flower_Stalk_D
     400000: Flower_A
     400002: Flower_Leaf_A
     400004: Flower_Low_A
     400006: Flower_Stalk_A
     400008: Flower_Stalk_B
     400010: //RootNode
+    400012: Flower_B
+    400014: Flower_Low_Leaf_A
+    400016: Flower_Stalk_C
+    400018: Flower_Stalk_D
     2100000: Flower_A
     2100002: FlowerStalk
     2300000: Flower_A
@@ -22,18 +30,35 @@ ModelImporter:
     2300004: Flower_Low_A
     2300006: Flower_Stalk_A
     2300008: Flower_Stalk_B
+    2300010: Flower_B
+    2300012: Flower_Low_Leaf_A
+    2300014: Flower_Stalk_C
+    2300016: Flower_Stalk_D
     3300000: Flower_A
     3300002: Flower_Leaf_A
     3300004: Flower_Low_A
     3300006: Flower_Stalk_A
     3300008: Flower_Stalk_B
+    3300010: Flower_B
+    3300012: Flower_Low_Leaf_A
+    3300014: Flower_Stalk_C
+    3300016: Flower_Stalk_D
     4300000: Flower_A
     4300002: Flower_Stalk_A
     4300004: Flower_Low_A
     4300006: Flower_Leaf_A
     4300008: Flower_Stalk_B
+    4300010: Flower_Low_Leaf_A
+    4300012: Flower_B
+    4300014: Flower_Stalk_D
+    4300016: Flower_Stalk_C
     9500000: //RootNode
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Flower
+    second: {fileID: 2100000, guid: 1761caebbe3ee7846878d711e7e4c65d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -44,6 +69,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Flower_A
     second: {fileID: 2100000, guid: 904fbc10227ca844f9325f2ee2113cb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leaf
+    second: {fileID: 2100000, guid: 0e00f8550b7136a4d8aa858afce90f6b, type: 2}
   materials:
     importMaterials: 1
     materialName: 1
