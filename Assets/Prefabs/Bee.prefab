@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23511075265963970}
   - component: {fileID: 143208068123700630}
   - component: {fileID: 114663132634462146}
+  - component: {fileID: 114493456001978276}
   m_Layer: 0
   m_Name: Bee
   m_TagString: Player
@@ -84,6 +85,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1942692806657228}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114493456001978276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1942692806657228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f110764cc4f5763429eb43bd3091d63b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canSwipe: 0
 --- !u!114 &114663132634462146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -95,8 +108,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4801d0bf27aca074fa9bf0895a65f536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12
+  speed: 0
   _pollen: 0
+  _isDead: 0
+  scoreText: {fileID: 0}
+  swipeControls: {fileID: 114493456001978276}
 --- !u!143 &143208068123700630
 CharacterController:
   m_ObjectHideFlags: 1

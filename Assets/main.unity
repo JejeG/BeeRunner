@@ -113,22 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &460901784 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1942692806657228, guid: 2027364ad9067ad4584965aa73499c90,
-    type: 2}
-  m_PrefabInternal: {fileID: 2143072732}
---- !u!114 &460901790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 460901784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f110764cc4f5763429eb43bd3091d63b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &914646848
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,16 +289,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114117068307417054, guid: ce06bff08d356a34eb90635ad959971a,
-        type: 2}
-      propertyPath: tileProps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117068307417054, guid: ce06bff08d356a34eb90635ad959971a,
-        type: 2}
-      propertyPath: tilePrefabs.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4998844610516628, guid: ce06bff08d356a34eb90635ad959971a, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1.7348046
@@ -347,36 +321,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114117068307417054, guid: ce06bff08d356a34eb90635ad959971a,
-        type: 2}
-      propertyPath: tilePrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 1772762329017312, guid: d9c50bc307745774aa4dc83a7e486316,
-        type: 2}
-    - target: {fileID: 114117068307417054, guid: ce06bff08d356a34eb90635ad959971a,
-        type: 2}
-      propertyPath: tilePrefabs.Array.data[2]
-      value: 
-      objectReference: {fileID: 1772762329017312, guid: d9c50bc307745774aa4dc83a7e486316,
-        type: 2}
-    - target: {fileID: 114117068307417054, guid: ce06bff08d356a34eb90635ad959971a,
-        type: 2}
-      propertyPath: tileProps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1998479315592670, guid: 73b40b33986a00147b0f2a4d60af23b4,
-        type: 2}
-    - target: {fileID: 114117068307417054, guid: ce06bff08d356a34eb90635ad959971a,
-        type: 2}
-      propertyPath: tileProps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1543331946324966, guid: 4a36b564446f87e4986ccbcf00004c43,
-        type: 2}
-    - target: {fileID: 114117068307417054, guid: ce06bff08d356a34eb90635ad959971a,
-        type: 2}
-      propertyPath: tilePrefabs.Array.data[0]
-      value: 
-      objectReference: {fileID: 1772762329017312, guid: d9c50bc307745774aa4dc83a7e486316,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce06bff08d356a34eb90635ad959971a, type: 2}
   m_IsPrefabParent: 0
@@ -645,16 +589,6 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 914646850}
-    - target: {fileID: 114663132634462146, guid: 2027364ad9067ad4584965aa73499c90,
-        type: 2}
-      propertyPath: speed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114663132634462146, guid: 2027364ad9067ad4584965aa73499c90,
-        type: 2}
-      propertyPath: swipeControls
-      value: 
-      objectReference: {fileID: 460901790}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2027364ad9067ad4584965aa73499c90, type: 2}
   m_IsPrefabParent: 0

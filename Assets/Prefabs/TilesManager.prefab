@@ -52,8 +52,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePrefabs:
-  - {fileID: 1388812591197852, guid: ad31b67547ee77b4c93e540d2f99a400, type: 2}
-  - {fileID: 1144539187774680, guid: 6ff3af5ee1e97014683da6c031b047f7, type: 2}
+  - {fileID: 1772762329017312, guid: d9c50bc307745774aa4dc83a7e486316, type: 2}
+  - {fileID: 1772762329017312, guid: d9c50bc307745774aa4dc83a7e486316, type: 2}
+  - {fileID: 1772762329017312, guid: d9c50bc307745774aa4dc83a7e486316, type: 2}
+  tileProps:
+  - {fileID: 1998479315592670, guid: 73b40b33986a00147b0f2a4d60af23b4, type: 2}
+  - {fileID: 1543331946324966, guid: 4a36b564446f87e4986ccbcf00004c43, type: 2}
+  maxProps: 3
   tileLength: 10
   totalTilesOnScreen: 7
   lastTileIndex: -1

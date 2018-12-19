@@ -16,6 +16,7 @@ public class Bee : MonoBehaviour {
     private float maxSpeed = 24.0f;
     private float acceleration = 2.0f;
 
+    private float swipeSpeed = 12.0f;
 
     // Pollen collected
     [SerializeField]
@@ -25,6 +26,8 @@ public class Bee : MonoBehaviour {
     [SerializeField]
     private bool _isDead = false;
     public bool isDead { get { return _isDead; } }
+
+    private bool _isShield = false;
 
     public Text scoreText;
 
@@ -58,13 +61,21 @@ public class Bee : MonoBehaviour {
             {
                 speed = maxSpeed;
             }
+        } else if(speed > maxSpeed)
+        {
+            speed -= acceleration * Time.deltaTime;
+            if(speed < maxSpeed)
+            {
+                speed = maxSpeed;
+            }
         }
 
         moveVector = Vector3.zero;
 
         if(swipeControls.swipeLeft || swipeControls.swipeRight)
         {
-            moveVector.x = swipeControls.swipeDelta.x / speed;
+            moveVector.x = swipeControls.swipeDelta.x / swipeSpeed;
+         
             if(transform.position.x <= -10 && moveVector.x < 0 || transform.position.x >= 10 && moveVector.x > 0)
             {
                 moveVector.x = 0;
@@ -73,15 +84,13 @@ public class Bee : MonoBehaviour {
        
         if(swipeControls.swipeUp || swipeControls.swipeDown)
         {
-            moveVector.y = swipeControls.swipeDelta.y / speed;
+            moveVector.y = swipeControls.swipeDelta.y / swipeSpeed;
 
             if (transform.position.y <= 1 && moveVector.y < 0 || transform.position.y >= 10 && moveVector.y > 0)
             {
                 moveVector.y = 0;
             }
         }
-
-        //moveVector.y = Mathf.SmoothDamp(transform.position.y, Mathf.Clamp(transform.position.y + currentdY, (_NEAR_GROUND_ALT / 10f), _Y_LIMIT_MAX), ref velocityY, 1f, 30f);
 
         //if ((transform.position.x <= -10 && Input.GetAxis("Horizontal") < 0) || (transform.position.x >= 10 && Input.GetAxis("Horizontal") > 0))
         //{
@@ -111,7 +120,21 @@ public class Bee : MonoBehaviour {
     {
         if(other.tag == "Flower")
         {
+            FlowerType type = other.transform.parent.gameObject.GetComponent<Flower>().type;
             _pollen++;
+            switch (type)
+            {
+                case FlowerType.POLLEN :
+                    _pollen += 2;
+                    break;
+                case FlowerType.SHIELD :
+                    _isShield = true;
+                    break;
+                case FlowerType.SPEED :
+                    speed = Mathf.Min(speed + 20, speed*2);
+                    
+                    break;
+            }
 
             if(_pollen >= GameManager.Instance.getScoreToReach())
             {
@@ -122,14 +145,20 @@ public class Bee : MonoBehaviour {
 
         } else if(other.tag == "Obstacle")
         {
-            _pollen--;
-
-            speed = speed / 2;
-
-            if(_pollen < 0)
+            if(_isShield == true)
             {
-                Died();
-                return;
+                _isShield = false;
+            } else
+            {
+                _pollen--;
+
+                speed = speed / 2;
+
+                if (_pollen < 0)
+                {
+                    Died();
+                    return;
+                }
             }
         }
 

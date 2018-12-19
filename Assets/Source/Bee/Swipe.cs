@@ -11,6 +11,7 @@ public class Swipe : MonoBehaviour {
     private bool _isDragging = false;
 
     private Vector2 _startTouch;
+    private float _startTime;
     private Vector2 _swipeDelta;
 
     public Vector2 swipeDelta { get { return _swipeDelta; } }
@@ -75,7 +76,7 @@ public class Swipe : MonoBehaviour {
         }
 
         // Did we cross the deadzone ?
-        if(_swipeDelta.magnitude > 1)
+        if(_swipeDelta.magnitude > 0)
         {
             // Direction ?
             float x = _swipeDelta.x;
