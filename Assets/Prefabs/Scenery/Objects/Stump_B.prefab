@@ -21,9 +21,10 @@ GameObject:
   - component: {fileID: 4239020712659002}
   - component: {fileID: 33876276092905510}
   - component: {fileID: 23003938347360034}
+  - component: {fileID: 64512141116757602}
   m_Layer: 0
   m_Name: Stump_B
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1431303691415606}
   m_LocalRotation: {x: -0.3805606, y: 0.59596455, z: 0.59596443, w: 0.3805606}
-  m_LocalPosition: {x: -108, y: 0, z: -262}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,4 +82,18 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1431303691415606}
+  m_Mesh: {fileID: 4300006, guid: 54b28690c57063f4d9689039b2b87f3f, type: 3}
+--- !u!64 &64512141116757602
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431303691415606}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300006, guid: 54b28690c57063f4d9689039b2b87f3f, type: 3}
