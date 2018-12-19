@@ -28,6 +28,12 @@ public class Bee : MonoBehaviour {
 
     public Text scoreText;
 
+
+    /*******
+     * MOBILE INPUTS
+     *******/
+    public Swipe swipeControls;
+
     // Use this for initialization
     void Start () {
         controller = GetComponent<CharacterController>();
@@ -35,12 +41,15 @@ public class Bee : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate() {
         if (isDead == true)
         {
+            swipeControls.canSwipe = false;
             GameManager.Instance.RestartGame();
             return;
         }
+
+        swipeControls.canSwipe = true;
 
         if (speed < maxSpeed)
         {
@@ -53,25 +62,46 @@ public class Bee : MonoBehaviour {
 
         moveVector = Vector3.zero;
 
-        if ((transform.position.x <= -10 && Input.GetAxis("Horizontal") < 0) || (transform.position.x >= 10 && Input.GetAxis("Horizontal") > 0))
+        if(swipeControls.swipeLeft || swipeControls.swipeRight)
         {
-            moveVector.x = 0;
+            moveVector.x = swipeControls.swipeDelta.x / speed;
+            if(transform.position.x <= -10 && moveVector.x < 0 || transform.position.x >= 10 && moveVector.x > 0)
+            {
+                moveVector.x = 0;
+            }
         }
-        else
-        {
-            moveVector.x = Input.GetAxis("Horizontal") * speed;
-        }
-
-        if ((transform.position.y <= 0 && Input.GetAxis("Vertical") < 0) || (transform.position.y >= 10 && Input.GetAxis("Vertical") > 0))
-        {
-            moveVector.y = 0;
-        }
-        else
-        {
-            moveVector.y = Input.GetAxis("Vertical") * speed;
-        }
-
        
+        if(swipeControls.swipeUp || swipeControls.swipeDown)
+        {
+            moveVector.y = swipeControls.swipeDelta.y / speed;
+
+            if (transform.position.y <= 1 && moveVector.y < 0 || transform.position.y >= 10 && moveVector.y > 0)
+            {
+                moveVector.y = 0;
+            }
+        }
+
+        //moveVector.y = Mathf.SmoothDamp(transform.position.y, Mathf.Clamp(transform.position.y + currentdY, (_NEAR_GROUND_ALT / 10f), _Y_LIMIT_MAX), ref velocityY, 1f, 30f);
+
+        //if ((transform.position.x <= -10 && Input.GetAxis("Horizontal") < 0) || (transform.position.x >= 10 && Input.GetAxis("Horizontal") > 0))
+        //{
+        //    moveVector.x = 0;
+        //}
+        //else
+        //{
+        //    moveVector.x = Input.GetAxis("Horizontal") * speed;
+        //}
+
+        //if ((transform.position.y <= 0 && Input.GetAxis("Vertical") < 0) || (transform.position.y >= 10 && Input.GetAxis("Vertical") > 0))
+        //{
+        //    moveVector.y = 0;
+        //}
+        //else
+        //{
+        //    moveVector.y = Input.GetAxis("Vertical") * speed;
+        //}
+
+
         moveVector.z = speed;
 
         controller.Move(moveVector * Time.deltaTime);
@@ -86,6 +116,7 @@ public class Bee : MonoBehaviour {
             if(_pollen >= GameManager.Instance.getScoreToReach())
             {
                 Debug.Log("YOU WIN ! NEXT LEVEL !");
+                swipeControls.canSwipe = false;
                 GameManager.instance.IncreaseLevel();
             }
 
@@ -109,5 +140,6 @@ public class Bee : MonoBehaviour {
     {
         Debug.Log("DIED !");
         _isDead = true;
+        swipeControls.canSwipe = false;
     }
 }
