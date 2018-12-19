@@ -16,7 +16,7 @@ public class GameManager : Object {
     public int[] levelConfig;
 
     protected GameManager(){
-        int baseScore = 3;
+        int baseScore = 50;
         levelConfig = new int[10];
         for (int i = 0; i < 10; i++)
         {
