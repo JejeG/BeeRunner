@@ -58,8 +58,18 @@ public class TilesManager : MonoBehaviour {
     private void SpawnTile()
     {
 
-        int randomIndex = Random.Range(0, tilePrefabs.Length);
-        lastTileIndex = randomIndex;
+        int randomIndex = 0;
+
+        for (int i = 0; i < tilePrefabs.Length; i++)
+        {
+            randomIndex = Random.Range(0, tilePrefabs.Length);
+
+            if (randomIndex != lastTileIndex)
+            {
+                lastTileIndex = randomIndex;
+                break;
+            }
+        }
 
         // /!\ TODO : Avoid to spawn the same tile as previous tile /!\
 

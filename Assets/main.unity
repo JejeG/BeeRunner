@@ -19,14 +19,14 @@ RenderSettings:
   m_FogMode: 1
   m_FogDensity: 0.01
   m_LinearFogStart: 0
-  m_LinearFogEnd: 100
+  m_LinearFogEnd: 150
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -294,22 +294,17 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114117068307417054, guid: ce06bff08d356a34eb90635ad959971a,
-        type: 2}
-      propertyPath: tileProps.Array.size
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 4998844610516628, guid: ce06bff08d356a34eb90635ad959971a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.7348046
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4998844610516628, guid: ce06bff08d356a34eb90635ad959971a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.2466376
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4998844610516628, guid: ce06bff08d356a34eb90635ad959971a, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -3.9921627
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4998844610516628, guid: ce06bff08d356a34eb90635ad959971a, type: 2}
       propertyPath: m_LocalRotation.x
@@ -331,64 +326,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114117068307417054, guid: ce06bff08d356a34eb90635ad959971a,
-        type: 2}
-      propertyPath: tileProps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1704447162204584, guid: 54e89506da74b774594044f0b0e9023d,
-        type: 2}
-    - target: {fileID: 114117068307417054, guid: ce06bff08d356a34eb90635ad959971a,
-        type: 2}
-      propertyPath: tileProps.Array.data[2]
-      value: 
-      objectReference: {fileID: 1235413700835756, guid: e4255d22c1c8afa498f1c4dd9a703b8b,
-        type: 2}
-    - target: {fileID: 114117068307417054, guid: ce06bff08d356a34eb90635ad959971a,
-        type: 2}
-      propertyPath: tileProps.Array.data[3]
-      value: 
-      objectReference: {fileID: 1358506446784842, guid: 95cae164d993173439fd92a941c4a44c,
-        type: 2}
-    - target: {fileID: 114117068307417054, guid: ce06bff08d356a34eb90635ad959971a,
-        type: 2}
-      propertyPath: tileProps.Array.data[4]
-      value: 
-      objectReference: {fileID: 1769072506197410, guid: 17cb97bfe6f82f249b61ed12249dbd0e,
-        type: 2}
-    - target: {fileID: 114117068307417054, guid: ce06bff08d356a34eb90635ad959971a,
-        type: 2}
-      propertyPath: maxProps
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117068307417054, guid: ce06bff08d356a34eb90635ad959971a,
-        type: 2}
-      propertyPath: totalTilesOnScreen
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117068307417054, guid: ce06bff08d356a34eb90635ad959971a,
-        type: 2}
-      propertyPath: tileProps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1861670602195446, guid: 889ca261f1dc1ea47a37a4fac89fe9aa,
-        type: 2}
-    - target: {fileID: 114117068307417054, guid: ce06bff08d356a34eb90635ad959971a,
-        type: 2}
-      propertyPath: tileProps.Array.data[5]
-      value: 
-      objectReference: {fileID: 1605811336430316, guid: 3026265eabdd81344b1195548b10e3dc,
-        type: 2}
-    - target: {fileID: 114117068307417054, guid: ce06bff08d356a34eb90635ad959971a,
-        type: 2}
-      propertyPath: tileProps.Array.data[6]
-      value: 
-      objectReference: {fileID: 1979695471393504, guid: 28b901460c6a9254892a314373077c9e,
-        type: 2}
-    - target: {fileID: 114117068307417054, guid: ce06bff08d356a34eb90635ad959971a,
-        type: 2}
-      propertyPath: tileProps.Array.data[7]
-      value: 
-      objectReference: {fileID: 1431303691415606, guid: 2c05fe6a3d467534c9d9df074caf9fb9,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce06bff08d356a34eb90635ad959971a, type: 2}
   m_IsPrefabParent: 0

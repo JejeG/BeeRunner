@@ -498,8 +498,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.8
-  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.3}
+  m_Radius: 1
+  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.2}
 --- !u!135 &135204107698754824
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -510,8 +510,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.8
-  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.3}
+  m_Radius: 1
+  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.2}
 --- !u!135 &135292402232211372
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -522,8 +522,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.8
-  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.3}
+  m_Radius: 1
+  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.2}
 --- !u!135 &135599945794613600
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -534,5 +534,5 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.8
-  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.3}
+  m_Radius: 1
+  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.2}

@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1970920034047130}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7348046, y: 3.2466376, z: -3.9921627}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,9 +56,21 @@ MonoBehaviour:
   - {fileID: 1985025123315704, guid: 6beb7f3b1321cfc4f9e1a89cb75edc1f, type: 2}
   - {fileID: 1985025123315704, guid: 6beb7f3b1321cfc4f9e1a89cb75edc1f, type: 2}
   tileProps:
-  - {fileID: 1998479315592670, guid: 73b40b33986a00147b0f2a4d60af23b4, type: 2}
-  - {fileID: 1543331946324966, guid: 4a36b564446f87e4986ccbcf00004c43, type: 2}
-  maxProps: 3
+  - {fileID: 1704447162204584, guid: 54e89506da74b774594044f0b0e9023d, type: 2}
+  - {fileID: 1861670602195446, guid: 889ca261f1dc1ea47a37a4fac89fe9aa, type: 2}
+  - {fileID: 1235413700835756, guid: e4255d22c1c8afa498f1c4dd9a703b8b, type: 2}
+  - {fileID: 1358506446784842, guid: 95cae164d993173439fd92a941c4a44c, type: 2}
+  - {fileID: 1769072506197410, guid: 17cb97bfe6f82f249b61ed12249dbd0e, type: 2}
+  - {fileID: 1605811336430316, guid: 3026265eabdd81344b1195548b10e3dc, type: 2}
+  - {fileID: 1979695471393504, guid: 28b901460c6a9254892a314373077c9e, type: 2}
+  - {fileID: 1431303691415606, guid: 2c05fe6a3d467534c9d9df074caf9fb9, type: 2}
+  - {fileID: 1704447162204584, guid: 54e89506da74b774594044f0b0e9023d, type: 2}
+  - {fileID: 1861670602195446, guid: 889ca261f1dc1ea47a37a4fac89fe9aa, type: 2}
+  - {fileID: 1235413700835756, guid: e4255d22c1c8afa498f1c4dd9a703b8b, type: 2}
+  - {fileID: 1358506446784842, guid: 95cae164d993173439fd92a941c4a44c, type: 2}
+  - {fileID: 1769072506197410, guid: 17cb97bfe6f82f249b61ed12249dbd0e, type: 2}
+  - {fileID: 1605811336430316, guid: 3026265eabdd81344b1195548b10e3dc, type: 2}
+  maxProps: 40
   tileLength: 200
-  totalTilesOnScreen: 7
+  totalTilesOnScreen: 3
   lastTileIndex: -1

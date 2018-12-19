@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4544901946966330}
   - component: {fileID: 33688593673522810}
   - component: {fileID: 23644304243686896}
+  - component: {fileID: 135663716286557082}
   m_Layer: 0
   m_Name: Flower_A (3)
   m_TagString: Untagged
@@ -38,6 +39,7 @@ GameObject:
   - component: {fileID: 4186408319223516}
   - component: {fileID: 33207603162289362}
   - component: {fileID: 23396425003255434}
+  - component: {fileID: 135151994805369392}
   m_Layer: 0
   m_Name: Flower_A (5)
   m_TagString: Untagged
@@ -55,6 +57,7 @@ GameObject:
   - component: {fileID: 4390731366846160}
   - component: {fileID: 33322989896504424}
   - component: {fileID: 23176473796376408}
+  - component: {fileID: 135231962486986904}
   m_Layer: 0
   m_Name: Flower_A (1)
   m_TagString: Untagged
@@ -89,6 +92,7 @@ GameObject:
   - component: {fileID: 4923790679734212}
   - component: {fileID: 33493302764561038}
   - component: {fileID: 23969627146248706}
+  - component: {fileID: 135354794729916324}
   m_Layer: 0
   m_Name: Flower_A
   m_TagString: Untagged
@@ -122,6 +126,7 @@ GameObject:
   - component: {fileID: 4369127277505186}
   - component: {fileID: 33505795581368762}
   - component: {fileID: 23557484991431754}
+  - component: {fileID: 135090696915987758}
   m_Layer: 0
   m_Name: Flower_A (2)
   m_TagString: Untagged
@@ -139,6 +144,7 @@ GameObject:
   - component: {fileID: 4015627271725382}
   - component: {fileID: 33744450470194862}
   - component: {fileID: 23139239676281712}
+  - component: {fileID: 135918156473494952}
   m_Layer: 0
   m_Name: Flower_A (4)
   m_TagString: Untagged
@@ -556,3 +562,75 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+--- !u!135 &135090696915987758
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1890375597252312}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.2}
+--- !u!135 &135151994805369392
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1187993822713888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.2}
+--- !u!135 &135231962486986904
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1318717307539854}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.2}
+--- !u!135 &135354794729916324
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1738477962032418}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.2}
+--- !u!135 &135663716286557082
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1176278662436334}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.2}
+--- !u!135 &135918156473494952
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1900161077208800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.2}
