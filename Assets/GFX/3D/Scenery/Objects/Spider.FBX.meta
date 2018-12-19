@@ -1,0 +1,318 @@
+fileFormatVersion: 2
+guid: 391d1165b7524114ea1fd6ed20a834f8
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Chelicere
+    100002: Chelicere001
+    100004: IK Chain009
+    100006: IK Chain010
+    100008: IK Chain011
+    100010: IK Chain012
+    100012: IK Chain013
+    100014: IK Chain014
+    100016: IK Chain015
+    100018: IK Chain016
+    100020: Loft001
+    100022: Loft003
+    100024: Loft004
+    100026: Loft005
+    100028: Loft006
+    100030: Loft007
+    100032: Loft009
+    100034: Loft010
+    100036: Loft011
+    100038: Loft012
+    100040: //RootNode
+    100042: Spider_Abdomen
+    100044: Spider_Thorax
+    100046: SpiderLimb_FL_C
+    100048: SpiderLimb_FL_C001
+    100050: SpiderLimb_FL_C002
+    100052: SpiderLimb_FL_C003
+    100054: SpiderLimb_FL_C004
+    100056: SpiderLimb_FL_C005
+    100058: SpiderLimb_FL_C006
+    100060: SpiderLimb_FL_C007
+    100062: SpiderLimb_FL_C008
+    100064: SpiderLimb_FL_C009
+    100066: SpiderLimb_FL_C010
+    100068: SpiderLimb_FL_C011
+    100070: SpiderLimb_FL_C012
+    100072: SpiderLimb_FL_C013
+    100074: SpiderLimb_FL_C014
+    100076: SpiderLimb_FL_C015
+    100078: SpiderLimb_FL_C016
+    100080: SpiderLimb_FL_C017
+    100082: SpiderLimb_FL_C018
+    100084: SpiderLimb_FL_C019
+    100086: _root_spider
+    100088: Stone_A
+    100090: Stone_B
+    100092: Stump_A
+    100094: Stump_B
+    400000: Chelicere
+    400002: Chelicere001
+    400004: IK Chain009
+    400006: IK Chain010
+    400008: IK Chain011
+    400010: IK Chain012
+    400012: IK Chain013
+    400014: IK Chain014
+    400016: IK Chain015
+    400018: IK Chain016
+    400020: Loft001
+    400022: Loft003
+    400024: Loft004
+    400026: Loft005
+    400028: Loft006
+    400030: Loft007
+    400032: Loft009
+    400034: Loft010
+    400036: Loft011
+    400038: Loft012
+    400040: //RootNode
+    400042: Spider_Abdomen
+    400044: Spider_Thorax
+    400046: SpiderLimb_FL_C
+    400048: SpiderLimb_FL_C001
+    400050: SpiderLimb_FL_C002
+    400052: SpiderLimb_FL_C003
+    400054: SpiderLimb_FL_C004
+    400056: SpiderLimb_FL_C005
+    400058: SpiderLimb_FL_C006
+    400060: SpiderLimb_FL_C007
+    400062: SpiderLimb_FL_C008
+    400064: SpiderLimb_FL_C009
+    400066: SpiderLimb_FL_C010
+    400068: SpiderLimb_FL_C011
+    400070: SpiderLimb_FL_C012
+    400072: SpiderLimb_FL_C013
+    400074: SpiderLimb_FL_C014
+    400076: SpiderLimb_FL_C015
+    400078: SpiderLimb_FL_C016
+    400080: SpiderLimb_FL_C017
+    400082: SpiderLimb_FL_C018
+    400084: SpiderLimb_FL_C019
+    400086: _root_spider
+    400088: Stone_A
+    400090: Stone_B
+    400092: Stump_A
+    400094: Stump_B
+    2100000: 01 - Default
+    2300000: Chelicere
+    2300002: Chelicere001
+    2300004: Loft001
+    2300006: Loft003
+    2300008: Loft004
+    2300010: Loft005
+    2300012: Loft006
+    2300014: Loft007
+    2300016: Loft009
+    2300018: Loft010
+    2300020: Loft011
+    2300022: Loft012
+    2300024: Spider_Abdomen
+    2300026: Spider_Thorax
+    2300028: SpiderLimb_FL_C
+    2300030: SpiderLimb_FL_C001
+    2300032: SpiderLimb_FL_C002
+    2300034: SpiderLimb_FL_C003
+    2300036: SpiderLimb_FL_C004
+    2300038: SpiderLimb_FL_C005
+    2300040: SpiderLimb_FL_C006
+    2300042: SpiderLimb_FL_C007
+    2300044: SpiderLimb_FL_C008
+    2300046: SpiderLimb_FL_C009
+    2300048: SpiderLimb_FL_C010
+    2300050: SpiderLimb_FL_C011
+    2300052: SpiderLimb_FL_C012
+    2300054: SpiderLimb_FL_C013
+    2300056: SpiderLimb_FL_C014
+    2300058: SpiderLimb_FL_C015
+    2300060: SpiderLimb_FL_C016
+    2300062: SpiderLimb_FL_C017
+    2300064: SpiderLimb_FL_C018
+    2300066: SpiderLimb_FL_C019
+    2300068: Stone_A
+    2300070: Stone_B
+    2300072: Stump_A
+    2300074: Stump_B
+    3300000: Chelicere
+    3300002: Chelicere001
+    3300004: Loft001
+    3300006: Loft003
+    3300008: Loft004
+    3300010: Loft005
+    3300012: Loft006
+    3300014: Loft007
+    3300016: Loft009
+    3300018: Loft010
+    3300020: Loft011
+    3300022: Loft012
+    3300024: Spider_Abdomen
+    3300026: Spider_Thorax
+    3300028: SpiderLimb_FL_C
+    3300030: SpiderLimb_FL_C001
+    3300032: SpiderLimb_FL_C002
+    3300034: SpiderLimb_FL_C003
+    3300036: SpiderLimb_FL_C004
+    3300038: SpiderLimb_FL_C005
+    3300040: SpiderLimb_FL_C006
+    3300042: SpiderLimb_FL_C007
+    3300044: SpiderLimb_FL_C008
+    3300046: SpiderLimb_FL_C009
+    3300048: SpiderLimb_FL_C010
+    3300050: SpiderLimb_FL_C011
+    3300052: SpiderLimb_FL_C012
+    3300054: SpiderLimb_FL_C013
+    3300056: SpiderLimb_FL_C014
+    3300058: SpiderLimb_FL_C015
+    3300060: SpiderLimb_FL_C016
+    3300062: SpiderLimb_FL_C017
+    3300064: SpiderLimb_FL_C018
+    3300066: SpiderLimb_FL_C019
+    3300068: Stone_A
+    3300070: Stone_B
+    3300072: Stump_A
+    3300074: Stump_B
+    4300000: Spider_Thorax
+    4300002: Loft001
+    4300004: SpiderLimb_FL_C001
+    4300006: SpiderLimb_FL_C
+    4300008: Loft004
+    4300010: SpiderLimb_FL_C004
+    4300012: SpiderLimb_FL_C005
+    4300014: Loft005
+    4300016: SpiderLimb_FL_C006
+    4300018: SpiderLimb_FL_C007
+    4300020: Loft006
+    4300022: SpiderLimb_FL_C008
+    4300024: SpiderLimb_FL_C009
+    4300026: Loft009
+    4300028: SpiderLimb_FL_C012
+    4300030: SpiderLimb_FL_C013
+    4300032: Loft010
+    4300034: SpiderLimb_FL_C014
+    4300036: SpiderLimb_FL_C015
+    4300038: Loft011
+    4300040: SpiderLimb_FL_C016
+    4300042: SpiderLimb_FL_C017
+    4300044: Loft012
+    4300046: SpiderLimb_FL_C018
+    4300048: SpiderLimb_FL_C019
+    4300050: Spider_Abdomen
+    4300052: Loft003
+    4300054: SpiderLimb_FL_C002
+    4300056: SpiderLimb_FL_C003
+    4300058: Chelicere
+    4300060: Chelicere001
+    4300062: Loft007
+    4300064: SpiderLimb_FL_C010
+    4300066: SpiderLimb_FL_C011
+    4300068: Stone_A
+    4300070: Stone_B
+    4300072: Stump_A
+    4300074: Stump_B
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: 89a3b75b28a2fa248bf985551afe9a80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stone_A
+    second: {fileID: 2100000, guid: 196c3f5682189ed4593138dbf76e472a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stump_A
+    second: {fileID: 2100000, guid: 3f1b588d5d893154ab43c68a1ab568a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stump_B
+    second: {fileID: 2100000, guid: a5046756a7fef7b43b6a421af92059d6, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
