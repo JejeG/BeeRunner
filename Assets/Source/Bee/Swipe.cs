@@ -14,6 +14,9 @@ public class Swipe : MonoBehaviour {
     private float _startTime;
     private Vector2 _swipeDelta;
 
+    private float _defaultInertia = 5f;
+    private float _currentInertia = 0.0f;
+
     public Vector2 swipeDelta { get { return _swipeDelta; } }
     public bool swipeLeft { get { return _swipeLeft; } }
     public bool swipeRight { get { return _swipeRight; } }
@@ -63,11 +66,16 @@ public class Swipe : MonoBehaviour {
         #endregion
 
         // Calculate the distance
-        _swipeDelta = Vector2.zero;
-        if(_isDragging)
+        //_swipeDelta = Vector2.zero;
+        if(_swipeDelta != Vector2.zero && _currentInertia > 0.0f)
+        {
+            _swipeDelta -= new Vector2(1.0f, 1.0f);
+            _currentInertia--;
+        } else if (_isDragging)
         {
             if(Input.touches.Length > 0)
             {
+                _currentInertia = _defaultInertia;
                 _swipeDelta = Input.touches[0].position - _startTouch;
             } else if(Input.GetMouseButton(0))
             {
@@ -82,28 +90,23 @@ public class Swipe : MonoBehaviour {
             float x = _swipeDelta.x;
             float y = _swipeDelta.y;
 
-            //if(Mathf.Abs(x) > Mathf.Abs(y))
-            //{
-                // Left or Right
-                if(x < 0)
-                {
-                    _swipeLeft = true;
-                } else
-                {
-                    _swipeRight = true;
-                }
-            //} else
-            //{
-                // Up or Down
-                if(y < 0)
-                {
-                    _swipeDown = true;
-                } else
-                {
-                    _swipeUp = true;
-                }
-            //}
-           // Reset();
+            // Left or Right
+            if(x < 0)
+            {
+                _swipeLeft = true;
+            } else
+            {
+                _swipeRight = true;
+            }
+            
+            // Up or Down
+            if(y < 0)
+            {
+                _swipeDown = true;
+            } else
+            {
+                _swipeUp = true;
+            }
         }
     }
 

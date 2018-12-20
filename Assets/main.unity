@@ -187,9 +187,9 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 914646848}
---- !u!4 &1013731014 stripped
+--- !u!4 &1323069889 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 4852332115680170, guid: c7db11b417a21dc469d7cc1a02c5b191,
+  m_PrefabParentObject: {fileID: 4520347745699582, guid: c7db11b417a21dc469d7cc1a02c5b191,
     type: 2}
   m_PrefabInternal: {fileID: 2041021667}
 --- !u!1 &1656627940
@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61cd13a86cd981f499eee80ebbc67f85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookAt: {fileID: 1013731014}
+  lookAt: {fileID: 1323069889}
   startOffset: {x: 0, y: 0, z: 0}
 --- !u!1001 &1770100657
 Prefab:
@@ -500,11 +500,6 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 914646850}
-    - target: {fileID: 136613727903172148, guid: c7db11b417a21dc469d7cc1a02c5b191,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7db11b417a21dc469d7cc1a02c5b191, type: 2}
   m_IsPrefabParent: 0
