@@ -62,19 +62,14 @@ MonoBehaviour:
   - {fileID: 1358506446784842, guid: 95cae164d993173439fd92a941c4a44c, type: 2}
   - {fileID: 1769072506197410, guid: 17cb97bfe6f82f249b61ed12249dbd0e, type: 2}
   - {fileID: 1605811336430316, guid: 3026265eabdd81344b1195548b10e3dc, type: 2}
-  - {fileID: 1979695471393504, guid: 28b901460c6a9254892a314373077c9e, type: 2}
-  - {fileID: 1431303691415606, guid: 2c05fe6a3d467534c9d9df074caf9fb9, type: 2}
+  - {fileID: 1411311814823810, guid: ed697f839ccd8ad4ba2320f69249467a, type: 2}
+  - {fileID: 1509328438294786, guid: 3a15312121faaee44a0a46d5c246f3f5, type: 2}
   - {fileID: 1704447162204584, guid: 54e89506da74b774594044f0b0e9023d, type: 2}
   - {fileID: 1861670602195446, guid: 889ca261f1dc1ea47a37a4fac89fe9aa, type: 2}
   - {fileID: 1235413700835756, guid: e4255d22c1c8afa498f1c4dd9a703b8b, type: 2}
   - {fileID: 1358506446784842, guid: 95cae164d993173439fd92a941c4a44c, type: 2}
   - {fileID: 1769072506197410, guid: 17cb97bfe6f82f249b61ed12249dbd0e, type: 2}
   - {fileID: 1605811336430316, guid: 3026265eabdd81344b1195548b10e3dc, type: 2}
-  - {fileID: 1235413700835756, guid: 15d68ba3d15ccf54687fecfa7d225959, type: 2}
-  - {fileID: 1235413700835756, guid: abf03498b4bf81645ad5237782e85404, type: 2}
-  - {fileID: 1235413700835756, guid: 25ae56882665cf247930441dc125986e, type: 2}
-  - {fileID: 1235413700835756, guid: 98208e3bf00d15e40b610d168f2762a1, type: 2}
-  - {fileID: 1235413700835756, guid: b39caed49f23bf141848a5c9b6f6991d, type: 2}
   maxProps: 40
   tileLength: 200
   totalTilesOnScreen: 3

@@ -11,6 +11,8 @@ public class GameManager : Object {
     public static GameManager instance = null;
     private static int currentLevel = 0;
 
+    public static int currentScore = 0;
+
     public GameState gameState { get; private set; }
     public event OnStateChangeHandler OnStateChange;
 
@@ -67,6 +69,7 @@ public class GameManager : Object {
     public void ResetLevel()
     {
         currentLevel = 0;
+        currentScore = 0;
     }
 
     public void IncreaseLevel()
@@ -80,6 +83,12 @@ public class GameManager : Object {
 
     public void StartLevel()
     {
+        currentScore = 0;
         SceneManager.LoadScene("main");
+    }
+
+    public void Toto()
+    {
+        Debug.Log("toto");
     }
 }

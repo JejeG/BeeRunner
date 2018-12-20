@@ -128,7 +128,6 @@ public class Bee : MonoBehaviour {
 
             if(_pollen >= GameManager.Instance.getScoreToReach())
             {
-                Debug.Log("YOU WIN ! NEXT LEVEL !");
                 swipeControls.canSwipe = false;
                 GameManager.instance.IncreaseLevel();
             }
@@ -158,7 +157,6 @@ public class Bee : MonoBehaviour {
 
     public void Died()
     {
-        Debug.Log("DIED !");
         _isDead = true;
         swipeControls.canSwipe = false;
     }
