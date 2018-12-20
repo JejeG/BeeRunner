@@ -38,7 +38,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4644965099763284}
   - component: {fileID: 114581089209940250}
-  - component: {fileID: 114685571547239532}
   m_Layer: 0
   m_Name: Flower_White
   m_TagString: Untagged
@@ -228,7 +227,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1235413700835756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.75093, y: 2.0005493, z: -3.5809326}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4820916331818528}
@@ -556,18 +555,6 @@ MeshFilter:
   m_GameObject: {fileID: 1457712316653992}
   m_Mesh: {fileID: 4300000, guid: a4c0c1dcec75eaa418aa9413786f8b76, type: 3}
 --- !u!114 &114581089209940250
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1235413700835756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1095edb929589734db33bc8ef09f009c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
---- !u!114 &114685571547239532
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
