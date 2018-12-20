@@ -130,7 +130,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1235413700835756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 12.143387, y: 2.5504699, z: -20.02623}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4905356974320418}
@@ -180,7 +180,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: b033d27dd22e49e4ea040be6cc38d264, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -248,7 +248,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: b033d27dd22e49e4ea040be6cc38d264, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -385,7 +385,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -784228907
+  randomSeed: 106295352
   InitialModule:
     serializedVersion: 3
     enabled: 1
