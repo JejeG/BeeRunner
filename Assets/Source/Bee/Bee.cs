@@ -29,6 +29,8 @@ public class Bee : MonoBehaviour {
 
     private bool _isShield = false;
 
+    public Animator beeAnimator;
+
     public Text scoreText;
 
 
@@ -41,7 +43,11 @@ public class Bee : MonoBehaviour {
     void Start () {
         controller = GetComponent<CharacterController>();
         scoreText.text = "0 / " + GameManager.Instance.getScoreToReach().ToString();
-	}
+
+        beeAnimator = GetComponentInChildren<Animator>();
+        beeAnimator.SetFloat("PitchBlend", 0.0f);
+        beeAnimator.SetFloat("RollBlend", 0.0f);
+    }
 	
 	// Update is called once per frame
 	void FixedUpdate() {
@@ -76,7 +82,7 @@ public class Bee : MonoBehaviour {
         {
             moveVector.x = swipeControls.swipeDelta.x / swipeSpeed;
          
-            if(transform.position.x <= -10 && moveVector.x < 0 || transform.position.x >= 10 && moveVector.x > 0)
+            if(transform.position.x <= -40 && moveVector.x < 0 || transform.position.x >= 40 && moveVector.x > 0)
             {
                 moveVector.x = 0;
             }
@@ -86,30 +92,14 @@ public class Bee : MonoBehaviour {
         {
             moveVector.y = swipeControls.swipeDelta.y / swipeSpeed;
 
-            if (transform.position.y <= 1 && moveVector.y < 0 || transform.position.y >= 10 && moveVector.y > 0)
+            if (transform.position.y <= 1 && moveVector.y < 0 || transform.position.y >= 20 && moveVector.y > 0)
             {
                 moveVector.y = 0;
             }
         }
 
-        //if ((transform.position.x <= -10 && Input.GetAxis("Horizontal") < 0) || (transform.position.x >= 10 && Input.GetAxis("Horizontal") > 0))
-        //{
-        //    moveVector.x = 0;
-        //}
-        //else
-        //{
-        //    moveVector.x = Input.GetAxis("Horizontal") * speed;
-        //}
-
-        //if ((transform.position.y <= 0 && Input.GetAxis("Vertical") < 0) || (transform.position.y >= 10 && Input.GetAxis("Vertical") > 0))
-        //{
-        //    moveVector.y = 0;
-        //}
-        //else
-        //{
-        //    moveVector.y = Input.GetAxis("Vertical") * speed;
-        //}
-
+        beeAnimator.SetFloat("RollBlend", Mathf.Clamp(moveVector.x * -1, -1f, 1f), 1f, 0.1f);
+        beeAnimator.SetFloat("PitchBlend", Mathf.Clamp(moveVector.y * -1, -1f, 1f), 1f, 0.1f);
 
         moveVector.z = speed;
 

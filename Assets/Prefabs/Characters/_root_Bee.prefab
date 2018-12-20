@@ -231,7 +231,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4852332115680170}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4768195567620524
 Transform:
@@ -245,7 +245,7 @@ Transform:
   m_Children:
   - {fileID: 4040426322421510}
   m_Father: {fileID: 4852332115680170}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4852332115680170
 Transform:
@@ -257,8 +257,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4768195567620524}
   - {fileID: 4520347745699582}
+  - {fileID: 4768195567620524}
   - {fileID: 4928479509514052}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -540,6 +540,7 @@ MonoBehaviour:
   speed: 0
   _pollen: 0
   _isDead: 0
+  beeAnimator: {fileID: 0}
   scoreText: {fileID: 0}
   swipeControls: {fileID: 114542034470700798}
 --- !u!136 &136613727903172148
