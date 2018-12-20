@@ -32,11 +32,9 @@ public class Bee : MonoBehaviour {
     public Animator beeAnimator;
 
     public Text scoreText;
+    public Image gauge;
 
-
-    /*******
-     * MOBILE INPUTS
-     *******/
+    // Mobile inputs
     public Swipe swipeControls;
 
     // Use this for initialization
@@ -47,6 +45,8 @@ public class Bee : MonoBehaviour {
         beeAnimator = GetComponentInChildren<Animator>();
         beeAnimator.SetFloat("PitchBlend", 0.0f);
         beeAnimator.SetFloat("RollBlend", 0.0f);
+
+        gauge.fillAmount = 0.0f;
     }
 	
 	// Update is called once per frame
@@ -152,7 +152,8 @@ public class Bee : MonoBehaviour {
             }
         }
 
-        scoreText.text = (_pollen).ToString()+" / " + GameManager.Instance.getScoreToReach().ToString();;
+        scoreText.text = (_pollen).ToString()+" / " + GameManager.Instance.getScoreToReach().ToString();
+        gauge.fillAmount = (float)_pollen * 100.0f / (float)GameManager.Instance.getScoreToReach() / 100.0f;
     }
 
     public void Died()

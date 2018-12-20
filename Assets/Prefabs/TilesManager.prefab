@@ -70,6 +70,11 @@ MonoBehaviour:
   - {fileID: 1358506446784842, guid: 95cae164d993173439fd92a941c4a44c, type: 2}
   - {fileID: 1769072506197410, guid: 17cb97bfe6f82f249b61ed12249dbd0e, type: 2}
   - {fileID: 1605811336430316, guid: 3026265eabdd81344b1195548b10e3dc, type: 2}
+  - {fileID: 1235413700835756, guid: 15d68ba3d15ccf54687fecfa7d225959, type: 2}
+  - {fileID: 1235413700835756, guid: abf03498b4bf81645ad5237782e85404, type: 2}
+  - {fileID: 1235413700835756, guid: 25ae56882665cf247930441dc125986e, type: 2}
+  - {fileID: 1235413700835756, guid: 98208e3bf00d15e40b610d168f2762a1, type: 2}
+  - {fileID: 1235413700835756, guid: b39caed49f23bf141848a5c9b6f6991d, type: 2}
   maxProps: 40
   tileLength: 200
   totalTilesOnScreen: 3

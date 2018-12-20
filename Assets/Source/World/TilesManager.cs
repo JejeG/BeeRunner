@@ -74,17 +74,15 @@ public class TilesManager : MonoBehaviour {
         GameObject ground;
         ground = Instantiate(tilePrefabs[randomIndex]) as GameObject;
         ground.transform.SetParent(transform);
-        ground.transform.position = new Vector3(-100.0f, 0.0f, spawnZ);//Vector3.forward * spawnZ;
+        ground.transform.position = new Vector3(-100.0f, 0.0f, spawnZ);
 
         for(int i = 0; i < maxProps; i++)
         {
             // 100 * 100 * 50
-            // Vector3 meshSize = ground.GetComponent<MeshRenderer>().bounds.size;
             Vector3 meshSize = new Vector3(100.0f, 100.0f, tileLength);
 
             TileGrid grid = ground.GetComponent<TileGrid>();
 
-            //Vector3 randomPosition = new Vector3(Random.Range(meshSize.x / 2 * -1, meshSize.x / 2), grid.height, Random.Range(spawnZ - meshSize.z / 2, spawnZ + meshSize.z / 2));
             Vector3 randomPosition = new Vector3(Random.Range(meshSize.x * -1, meshSize.x), grid.height, Random.Range(spawnZ, spawnZ + meshSize.z));
             RaycastHit hitInfo;
             Ray ray = new Ray();
@@ -101,7 +99,6 @@ public class TilesManager : MonoBehaviour {
 
                     randomProp.transform.SetParent(ground.transform);
 
-                    //Vector3 calculatedPosition = new Vector3(randomPosition.x, ground.transform.position.y + randomProp.GetComponent<MeshRenderer>().bounds.size.y / 2, randomPosition.z);
                     Vector3 calculatedPosition = new Vector3(randomPosition.x, ground.transform.position.y, randomPosition.z);
                     var finalPosition = grid.GetNearestPointOnGrid(calculatedPosition);
                     randomProp.transform.position = finalPosition;

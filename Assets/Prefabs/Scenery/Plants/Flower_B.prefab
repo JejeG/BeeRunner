@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 135663716286557082}
   m_Layer: 0
   m_Name: Flower_A (3)
-  m_TagString: Untagged
+  m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 135151994805369392}
   m_Layer: 0
   m_Name: Flower_A (5)
-  m_TagString: Untagged
+  m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 135231962486986904}
   m_Layer: 0
   m_Name: Flower_A (1)
-  m_TagString: Untagged
+  m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 135354794729916324}
   m_Layer: 0
   m_Name: Flower_A
-  m_TagString: Untagged
+  m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 135090696915987758}
   m_Layer: 0
   m_Name: Flower_A (2)
-  m_TagString: Untagged
+  m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 135918156473494952}
   m_Layer: 0
   m_Name: Flower_A (4)
-  m_TagString: Untagged
+  m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
