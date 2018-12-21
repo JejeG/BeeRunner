@@ -98,8 +98,8 @@ public class Bee : MonoBehaviour {
             }
         }
 
-        beeAnimator.SetFloat("RollBlend", Mathf.Clamp(moveVector.x * -1, -1f, 1f), 1f, 0.1f);
-        beeAnimator.SetFloat("PitchBlend", Mathf.Clamp(moveVector.y * -1, -1f, 1f), 1f, 0.1f);
+        beeAnimator.SetFloat("RollBlend", Mathf.Clamp(moveVector.x * -1 * Time.deltaTime, -1f, 1f), 1f, 0.1f);
+        beeAnimator.SetFloat("PitchBlend", Mathf.Clamp(moveVector.y * -1 * Time.deltaTime, -1f, 1f), 1f, 0.1f);
 
         moveVector.z = speed;
 

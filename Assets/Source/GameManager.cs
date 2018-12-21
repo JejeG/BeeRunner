@@ -73,6 +73,7 @@ public class GameManager : Object {
         currentLevel = 0;
         currentScore = 0;
         distance = 0;
+        isEnd = false;
     }
 
     public void IncreaseLevel()
