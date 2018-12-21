@@ -10,6 +10,11 @@ public class PlayButton : MonoBehaviour {
 	void Start () {
         Button b = gameObject.GetComponent<Button>();
 
+        if(GameManager.Instance.hasCompleteAllLevel())
+        {
+            GameManager.isEnd = true;
+        }
+
         if (SceneManager.GetActiveScene().name == "menu") {
         	b.onClick.AddListener(delegate () { GameManager.Instance.RestartGame(); });
         } else {
