@@ -123,7 +123,7 @@ public class Bee : MonoBehaviour {
                     _isShield = true;
                     break;
                 case FlowerType.SPEED :
-                    speed = Mathf.Min(speed + 20, speed*2);
+                    speed = Mathf.Min(speed + 10, speed * 1.5f);
                     
                     break;
             }
