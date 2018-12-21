@@ -10,7 +10,7 @@ public class EndGame : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		distanceText.text = GameManager.distance.ToString() + " km";
+		distanceText.text = GameManager.distance.ToString() + " m";
 		scoreText.text = GameManager.currentScore.ToString() + " pollens";
 	}
 	
