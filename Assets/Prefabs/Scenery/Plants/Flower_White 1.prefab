@@ -38,9 +38,10 @@ GameObject:
   - component: {fileID: 4495603579096232}
   - component: {fileID: 33797697372917286}
   - component: {fileID: 23047475601750236}
+  - component: {fileID: 135525723310787338}
   m_Layer: 0
   m_Name: Flower_White (1)
-  m_TagString: Untagged
+  m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,9 +72,10 @@ GameObject:
   - component: {fileID: 4297030823130222}
   - component: {fileID: 33969831824045440}
   - component: {fileID: 23056099642083002}
+  - component: {fileID: 135157568649972708}
   m_Layer: 0
   m_Name: Flower_White (2)
-  m_TagString: Untagged
+  m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88,9 +90,10 @@ GameObject:
   - component: {fileID: 4550391291728496}
   - component: {fileID: 33943845204691780}
   - component: {fileID: 23582756620422974}
+  - component: {fileID: 135960048876351334}
   m_Layer: 0
   m_Name: Flower_White
-  m_TagString: Untagged
+  m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,9 +108,10 @@ GameObject:
   - component: {fileID: 4820916331818528}
   - component: {fileID: 33811208330217594}
   - component: {fileID: 23077841965182308}
+  - component: {fileID: 135989490791814600}
   m_Layer: 0
   m_Name: Flower_White
-  m_TagString: Untagged
+  m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,9 +160,10 @@ GameObject:
   - component: {fileID: 4575560141362134}
   - component: {fileID: 33049133323091404}
   - component: {fileID: 23377636104108662}
+  - component: {fileID: 135880208507572582}
   m_Layer: 0
   m_Name: Flower_White
-  m_TagString: Untagged
+  m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,9 +178,10 @@ GameObject:
   - component: {fileID: 4486843854243470}
   - component: {fileID: 33558886184906404}
   - component: {fileID: 23601738691323398}
+  - component: {fileID: 135740288573698734}
   m_Layer: 0
   m_Name: Flower_White
-  m_TagString: Untagged
+  m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -879,6 +885,78 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+--- !u!135 &135157568649972708
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1457712316653992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.3}
+--- !u!135 &135525723310787338
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1139482330259064}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.3}
+--- !u!135 &135740288573698734
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1851355096429296}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.3}
+--- !u!135 &135880208507572582
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1789903656727258}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.3}
+--- !u!135 &135960048876351334
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1463968199962112}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.3}
+--- !u!135 &135989490791814600
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1577700781183958}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: -0.0000030398369, y: -0.0020959377, z: 0.3}
 --- !u!198 &198368696720086298
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -939,7 +1017,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1506115796
+  randomSeed: 1386012557
   InitialModule:
     serializedVersion: 3
     enabled: 1
