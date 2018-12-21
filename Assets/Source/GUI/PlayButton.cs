@@ -10,16 +10,20 @@ public class PlayButton : MonoBehaviour {
 	void Start () {
         Button b = gameObject.GetComponent<Button>();
 
-        if(SceneManager.GetActiveScene().name == "menu") {
+        if (SceneManager.GetActiveScene().name == "menu") {
         	b.onClick.AddListener(delegate () { GameManager.Instance.RestartGame(); });
         } else {
-        	b.onClick.AddListener(delegate () {
+            if (GameManager.isEnd == false)
+            {
+                Text buttonText = b.GetComponentInChildren<Text>();
+                buttonText.text = "Next level";
+            }
+
+            b.onClick.AddListener(delegate () {
         		if(GameManager.isEnd == true) {
         			GameManager.Instance.RestartGame(); 	
         		} else {
         			GameManager.Instance.IncreaseLevel();
-        			Text buttonText = b.GetComponentInChildren<Text>();
-        			buttonText.text = "Next level";
         		}
         	});
         }

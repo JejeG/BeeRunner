@@ -99,10 +99,10 @@ public class TilesManager : MonoBehaviour {
 
                     randomProp.transform.SetParent(ground.transform);
 
-                    Vector3 calculatedPosition = new Vector3(randomPosition.x, ground.transform.position.y, randomPosition.z);
+                    Vector3 calculatedPosition = new Vector3(randomPosition.x, hitInfo.transform.GetComponent<Terrain>().SampleHeight(randomPosition), randomPosition.z);
                     var finalPosition = grid.GetNearestPointOnGrid(calculatedPosition);
                     randomProp.transform.position = finalPosition;
-                    randomProp.transform.Rotate(Vector3.up * Random.Range(0.0f, 360.0f));
+                    randomProp.transform.Rotate(new Vector3(0,1,0) * Random.Range(0.0f, 360.0f));
                 }
             }
         }
