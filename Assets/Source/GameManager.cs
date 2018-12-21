@@ -3,10 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum GameState { MENU, GAME, END }
-
-public delegate void OnStateChangeHandler();
-
 public class GameManager : Object {
     public static GameManager instance = null;
     private static int currentLevel = 0;
@@ -15,15 +11,14 @@ public class GameManager : Object {
     public static int currentScore = 0;
     public static int distance = 0;
 
-    public GameState gameState { get; private set; }
-    public event OnStateChangeHandler OnStateChange;
-
     public int[] levelConfig;
+
+    private int _maxLevel = 20;
 
     protected GameManager(){
         int baseScore = 10;
-        levelConfig = new int[10];
-        for (int i = 0; i < 10; i++)
+        levelConfig = new int[_maxLevel];
+        for (int i = 0; i < _maxLevel; i++)
         {
             levelConfig[i] = baseScore;
             baseScore += baseScore;
@@ -42,12 +37,6 @@ public class GameManager : Object {
 
             return GameManager.instance;
         }
-    }
-
-    public void SetGameState(GameState state)
-    {
-        this.gameState = state;
-        OnStateChange();
     }
 
     public void OnApplicationQuit()
@@ -95,5 +84,10 @@ public class GameManager : Object {
     public void LoadLevel(string name)
     {
         SceneManager.LoadScene(name);
+    }
+
+    public bool hasCompleteAllLevel()
+    {
+        return currentLevel == (levelConfig.Length - 1);
     }
 }

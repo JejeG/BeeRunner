@@ -540,8 +540,9 @@ MonoBehaviour:
   speed: 0
   _pollen: 0
   _isDead: 0
-  beeAnimator: {fileID: 0}
+  beeAnimator: {fileID: 95443836031989472}
   scoreText: {fileID: 0}
+  gauge: {fileID: 0}
   swipeControls: {fileID: 114542034470700798}
 --- !u!136 &136613727903172148
 CapsuleCollider:
