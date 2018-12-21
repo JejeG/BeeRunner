@@ -29,6 +29,8 @@ public class Bee : MonoBehaviour {
 
     private bool _isShield = false;
 
+    private float limitX = 40.0f;
+
     public Animator beeAnimator;
 
     public Text scoreText;
@@ -82,7 +84,7 @@ public class Bee : MonoBehaviour {
         {
             moveVector.x = swipeControls.swipeDelta.x / swipeSpeed;
          
-            if(transform.position.x <= -40 && moveVector.x < 0 || transform.position.x >= 40 && moveVector.x > 0)
+            if(transform.position.x <= (limitX * -1.0f) && moveVector.x < 0 || transform.position.x >= limitX && moveVector.x > 0)
             {
                 moveVector.x = 0;
             }
@@ -98,8 +100,8 @@ public class Bee : MonoBehaviour {
             }
         }
 
-        beeAnimator.SetFloat("RollBlend", Mathf.Clamp(moveVector.x * -1 * Time.deltaTime, -1f, 1f), 1f, 0.1f);
-        beeAnimator.SetFloat("PitchBlend", Mathf.Clamp(moveVector.y * -1 * Time.deltaTime, -1f, 1f), 1f, 0.1f);
+        beeAnimator.SetFloat("RollBlend", Mathf.Clamp(moveVector.x * -1 * Time.deltaTime * 0.5f, -1f, 1f), 1f, 0.1f);
+        beeAnimator.SetFloat("PitchBlend", Mathf.Clamp(moveVector.y * -1 * Time.deltaTime * 0.5f, -1f, 1f), 1f, 0.1f);
 
         moveVector.z = speed;
 

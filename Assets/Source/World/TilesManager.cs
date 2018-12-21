@@ -30,6 +30,8 @@ public class TilesManager : MonoBehaviour {
     [SerializeField]
     private int lastTileIndex = -1;
 
+    private float limitX = 55.0f;
+
     // List of active tiles
     private List<GameObject> activeTiles;
 
@@ -83,7 +85,7 @@ public class TilesManager : MonoBehaviour {
 
             TileGrid grid = ground.GetComponent<TileGrid>();
 
-            Vector3 randomPosition = new Vector3(Random.Range(meshSize.x * -1, meshSize.x), grid.height, Random.Range(spawnZ, spawnZ + meshSize.z));
+            Vector3 randomPosition = new Vector3(Random.Range(meshSize.x * -1 + limitX, meshSize.x - limitX), grid.height, Random.Range(spawnZ, spawnZ + meshSize.z));
             RaycastHit hitInfo;
             Ray ray = new Ray();
             ray.origin = randomPosition;
