@@ -54,7 +54,7 @@ public class Bee : MonoBehaviour {
         if (isDead == true)
         {
             swipeControls.canSwipe = false;
-            GameManager.Instance.RestartGame();
+            GameManager.Instance.LoadLevel("end");
             return;
         }
 
@@ -126,10 +126,13 @@ public class Bee : MonoBehaviour {
                     break;
             }
 
+            GameManager.currentScore = _pollen;
+
             if(_pollen >= GameManager.Instance.getScoreToReach())
             {
+                GameManager.distance = (int)transform.position.z;
                 swipeControls.canSwipe = false;
-                GameManager.instance.IncreaseLevel();
+                GameManager.instance.LoadLevel("end");
             }
 
         } else if(other.tag == "Obstacle")
@@ -157,7 +160,9 @@ public class Bee : MonoBehaviour {
 
     public void Died()
     {
+        GameManager.distance = (int)transform.position.z;
         _isDead = true;
         swipeControls.canSwipe = false;
+        GameManager.isEnd = true;
     }
 }
